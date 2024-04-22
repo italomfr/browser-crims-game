@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: darkgray;
+}
+
+.area1{
+    height: 800px;
+}
+
+.navH{
+    background-image: linear-gradient(to bottom,#484848, #555555, #3a3232);
+}
+ 

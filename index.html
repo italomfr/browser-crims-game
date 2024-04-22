@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Página Inicial - TheGangs Online</title>
+    <style>
+        /* Estilos personalizados */
+        .navbar {
+            background: linear-gradient(to top, #3c3c3c, #101010);
+            border: #7d7d7d solid 1px;
+        }
+
+        .content {
+            background-image: url('imgs/bg1.jpg');
+            background-size: cover;
+            min-height: 100vh;
+            padding: 100px 0;
+        }
+
+        .login-area {
+            background-color: rgba(169, 169, 169, 0.4); /* cinza com 70% de transparência */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #cbbc1a;">TheGangs Online</a>
+            <div class="d-flex">
+                <a class="nav-link" href="#" style="color: #cbbc1a;">Iniciar</a>
+                <a class="nav-link" href="cadastro.html" style="color: #cbbc1a;">Cadastrar</a>
+                <a class="nav-link" href="#" style="color: #cbbc1a;">Ranking</a>
+                <a class="nav-link" href="#" style="color: #cbbc1a;">Ajuda</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <!-- Aqui você pode adicionar o conteúdo da página -->
+                </div>
+                <div class="col-sm-3">
+                    <!-- Área de login -->
+                    <div class="login-area">
+                        <h3 class="text-center" style="color: #cbbc1a;">Entrar</h3>
+                        <form action="login.php" method="POST">
+                            <div class="mb-3">
+                                <label for="username" class="form-label" style="color: #cbbc1a; font-size: large;"><b>Usuário</b></label>
+                                <input type="text" class="form-control" id="username" name="username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label" style="color: #cbbc1a; font-size: large;"><b>Senha</b></label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary btn-block" style="background-color: #cbbc1a; color: #000;">Entrar</button>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" style="color: #FFF;">Esqueci minha senha</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
